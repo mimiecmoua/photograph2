@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'The Seasons';
+    src: url('fonts/TheSeasons-Regular.woff2') format('woff2'),
+         url('fonts/TheSeasons-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Base Styles
+********************************************************************* */
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: 'The Seasons', serif;
+	color: #222;
+}
+
+.wrappers,
+  .content {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .content {
+    overflow-x: hidden;
+  }
+  
+  .content .section {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .content .section.hero {
+    background-image: url(./img/backg7.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .images-containers {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    perspective: 500px;
+    overflow: hidden;
+  }
+  
+  .images-containers .zoom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+/* medias  zoom */
+
+/* iPhone S (320px) */
+@media only screen and (max-width: 375px) {
+	.content .section.hero {
+		background-image: url('./img/backg-mob-text.png');
+		background-size: cover;
+		background-position: center center;
+	}
+  }
+  
+  /* Petits appareils mobiles (jusqu'à 480px) */
+  @media only screen and (max-width: 480px) {
+	.content .section.hero {
+		background-image: url('./img/backg-mob-text2.png');
+		background-size: cover;
+		background-position: center center;
+	}
+  }
+  
+  /* Tablettes (de 481px à 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+	.content .section.hero {
+		background-image: url('./img/backg-mob-text2.png');
+		background-size: cover;
+		background-position: center center;
+	}
+  }
+  
+  /* Ordinateurs portables (de 769px à 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.content .section.hero {
+		background-image: url('./img/backg-mob-text2.png');
+		background-size: cover;
+		background-position: center center;
+	}
+  }
+  
+  /* Ordinateurs de bureau (1025px et plus) */
+  @media only screen and (min-width: 1025px) {
+	.content .section.hero {
+		background-image: url('./img/backg7.png');
+		background-size: cover;
+		background-position: center center;
+	}
+  }
+
+  
+  
+  .gallery-track {
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+    padding: 0.25rem;
+    will-change: transform;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .card {
+    height: 400px;
+    overflow: hidden;
+  } 
+
+  .card-image-wrapper {
+    height: 150%;
+    will-change: transform;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  @media (width < 800px) {
+    .gallery-track {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (width < 550px) {
+    .gallery-track {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+
