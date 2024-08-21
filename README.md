@@ -14,6 +14,10 @@ Ce projet est un site vitrine destiné à présenter le portfolio d'un photograp
 
 Ce projet s'inspire de plusieurs travaux trouvés sur CodePen, où les techniques de parallaxe et de zoom sont explorées pour créer des expériences utilisateur captivantes.
 
+## Mon site en ligne
+
+Découvrez mon site de photographie en ligne : [Jack's Pictures](https://jackspictures.netlify.app/)
+
 ## Auteur
 
 Ce projet a été créé par [Émilie Clain - webOara] en 2024. N'hésitez pas à me contacter pour toute question ou suggestion !
