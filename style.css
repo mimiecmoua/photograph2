@@ -66,6 +66,8 @@ body {
     object-position: center center;
   }
 
+  
+
 /* medias  zoom */
 
 /* iPhone S (320px) */
@@ -122,10 +124,10 @@ body {
     gap: 0.5rem;
     padding: 0.25rem;
     will-change: transform;
-    transition: transform 0.3s ease-out;
+    /*transition: transform 0.3s ease-out;*/
   }
   
-  .card {
+  .image-card {
     height: 400px;
     overflow: hidden;
   } 

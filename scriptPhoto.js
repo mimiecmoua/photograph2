@@ -1,18 +1,10 @@
 const gallery = document.querySelector('.gallery');
 const track = document.querySelector('.gallery-track');
-const cards = document.querySelectorAll('.card');
-const easing = 0.1;
+const cards = document.querySelectorAll('.image-card');
+const easing = 0.05;
 let startY = 0;
 let endY = 0;
 let raf;
-
-let isScrolling;
-
-window.addEventListener('scroll', function() {
-    window.clearTimeout(isScrolling);
-    isScrolling = setTimeout(init, 100);
-}, false);
-
 
 const lerp = (start,end,t) => start * (1-t) + end * t;
 
@@ -32,16 +24,12 @@ function startScroll() {
 }
 
 function parallax(card) {
-  try {
-      const wrapper = card.querySelector('.card-image-wrapper');
-      const diff = (card.offsetHeight - wrapper.offsetHeight) * 3;
-      const { top } = card.getBoundingClientRect();
-      const progress = top / window.innerHeight;
-      const yPos = diff * progress;
-      wrapper.style.transform = `translateY(${yPos}px)`;
-  } catch (error) {
-      console.error('Error in parallax effect:', error);
-  }
+  const wrapper = card.querySelector('.card-image-wrapper');
+  const diff = card.offsetHeight - wrapper.offsetHeight;
+  const {top} = card.getBoundingClientRect();
+  const progress = top / window.innerHeight;
+  const yPos = diff * progress;
+  wrapper.style.transform = `translateY(${yPos}px)`;
 }
 
 const activateParallax = () => cards.forEach(parallax);

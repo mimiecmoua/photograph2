@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
         markers: false
       }
     })
-    .to("img", {
+    .to(".zoom", {
       scale: 2,
       z: 350,
       transformOrigin: "center center",
