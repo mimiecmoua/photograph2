@@ -2,7 +2,7 @@
 
 Ce projet est un site vitrine destiné à présenter le portfolio d'un photographe. Il intègre des effets visuels dynamiques tels que des zooms et des effets parallaxe réalisés en JavaScript, offrant une expérience fluide et immersive pour les visiteurs.
 
-![Screenshot](./img/captureSite.png)
+![Screenshot](./img/captureSite2.png)
 
 ## Fonctionnalités
 
@@ -20,7 +20,7 @@ Ce projet a été créé par [Émilie Clain - webOara] en 2024. N'hésitez pas �
 
 ## Captures d'écran
 
-![Page d'accueil](./img/captureSite.png)
+![Page d'accueil](./img/captureSite2.png)
 
 ## Installation
 
